@@ -8,10 +8,9 @@ function afficherCentre() { // La fonction est appellée lorsqu'on clique sur le
 	bouttonAfficher.style.display = "none"; // Le bouton sur lequel on vient de cliquer disparaît
 }
 
-let termeDeRecherche = document.getElementById("barreRecherche").value; // On va chercher le terme de recherche rentré par l'utilisateur
-let urlRecherche = "https://www.google.fr/#q=" + termeDeRecherche; // On définit l'URL vers laquelle renvoyer l'utilisateur
-
 function rechercheGoogle() {
+	let termeDeRecherche = document.getElementById("barreRecherche").value; // On va chercher le terme de recherche rentré par l'utilisateur
+	let urlRecherche = "https://www.google.fr/#q=" + termeDeRecherche; // On définit l'URL vers laquelle renvoyer l'utilisateur
 	document.location.href=urlRecherche; // On renvoit l'utilisateur sur l'URL définie plus haut
 }
 
